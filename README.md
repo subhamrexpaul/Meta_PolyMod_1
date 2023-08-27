@@ -19,29 +19,29 @@ Begin by cloning this repository and installing all the necessary dependencies:
 ### Running the Program
 
 To make the project operational, you need to follow these steps:
-*1. Deploy the contract by executing the following command:
+1. Deploy the contract by executing the following command:
 ```
 $ npx hardhat run scripts/deploy.js --network goerli
 ```
 This command will deploy the contract and provide you with an address. This address should be used in other scripts.
 
-*2. Mint the REX (NFTs) by running the following command:
+2. Mint the REX (NFTs) by running the following command:
 ```
 $ npx hardhat run scripts/mint.js --network goerli
 ```
 Adjust the values for `CIDs` and `prompt` based on your REXs.
 
-*3. Generate the promptDescription function by running the given command:
+3. Generate the promptDescription function by running the given command:
 
 ```
 $ npx hardhat run scripts/getPrompt.js --network goerli
 ```
 
-*4. Approve and deposit the NFTs to fxPortal by running the script:
+4. Approve and deposit the NFTs to fxPortal by running the script:
 ```
  $ npx hardhat run scripts/approveDeposit.js --network goerli
 ```
-*5. After approximately 15-25 minutes, the NFTs will be transferred to the Mumbai Testnet. You can verify your wallet's balance by executing the following command:
+5. After approximately 15-25 minutes, the NFTs will be transferred to the Mumbai Testnet. You can verify your wallet's balance by executing the following command:
 ```
  $ npx hardhat run scripts/getBalance.js --network mumbai
 ```
